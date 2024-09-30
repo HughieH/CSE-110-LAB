@@ -62,6 +62,9 @@
     padding: 20px;
 }
 
+.navbar_logo {
+    max-width: 100%;
+}
 /* Style the navbar */
 #navbar {
     position: sticky;
@@ -85,10 +88,6 @@
     color: white;
 }
 
-.navbar_logo {
-    max-width: 100%;
-}
-
 ul {
     list-style-type: none;
     margin: 0;
@@ -99,4 +98,34 @@ ul {
 img {
     max-width: 100%;
 }
-  
+
+/* Media query for screen sizes less than 800px */
+@media (max-width: 800px) {
+
+    #navbar a {
+        display: none;
+    }
+
+    .navbar_logo {
+        max-width: 75%;
+    }
+
+    /* Adjust header font-size */
+    h2 {
+        font-size: 24px;
+    }
+
+    /* Adjust paragraph text font-size */
+    p {
+        font-size: 20px;
+    }
+
+    /* Change the grid layout in the last section (assuming you had a 4-column grid) */
+    .section_3_grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr; /* Create a 2-column grid */
+        grid-gap: 20px;
+        width: 100%;
+    }
+
+}
